@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meus carros</title>
+    </head>
+{% block content%}
+    <body>
+        <h3>Meus carros</h3>
+        {% for car in cars %}
+            <p>{{ car.brand }} - {{ car.model }} - {{ car.factory_year }}</p>
+        {% endfor %}
+    </body>
+{% endblock %}
+</html>
